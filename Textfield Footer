@@ -1,0 +1,18 @@
+struct FooterView: View {
+    var body: some View {
+        HStack {
+            Text("Du hast noch keinen Account?")
+                .foregroundColor(Color.gray)
+                .font(.footnote)
+            
+            Button {
+                // Kein Account drücken
+            } label: {
+                Text("Account erstellen")
+                    .foregroundColor(Color.black)
+                    .bold()
+            }
+            
+        }
+    }
+}
